@@ -39,6 +39,9 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias HandlerFnNoArg fun() | "function() end"
 --- @alias HexColor string | "'FFEEA0A0'" | "'AARRGGBB'"
 --- @alias HexColor6Digit string | "'EEA0A0'" | "'RRGGBB'"
+--- @alias HexARGBA string | "'fcEEA0A0'" | "'fcRRGGBB'"
+--- @alias HexRGBA string | "'EEA0A0fc'" | "'RRGGBBfc'"
+--- @alias HexRGB string | "'EEA0A0'" | "'RRGGBB'"
 --- @alias Icon number The spell icon texture
 --- @alias IconIDOrPath Icon|IconPath
 --- @alias IconPath string The path to icon texture
