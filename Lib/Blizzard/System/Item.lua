@@ -6,9 +6,8 @@ Item
 --- @alias ItemName string | "'Conjured Mana Biscuit'"
 --- @alias ItemLink string | "'|cff0070dd|Hitem:80921:4721:::::::36:103::1:::::::|h[Saboteur's Stabilizing Bracers]|h|r'"
 --- @alias ItemType string The localized type name of the item: Armor, Weapon, Quest, etc.
---- @alias ItemIdentifier ItemID|ItemGUID|ItemLink|ItemName
 --- @alias ItemID_Link_Or_Name number|string
---- @alias ItemInfo ItemID|ItemGUID|ItemLink|ItemName | "Item ID, GUID, Link or Name"
+--- @alias ItemIdentifier ItemID|ItemGUID|ItemLink|ItemName|"Item ID, GUID, Link or Name"
 --- @alias StrippedItemLink string The stripped item link
 --- @alias ItemQuality number The Enum.ItemQuality number value
 --- @alias ItemLevel number The base item level, not including upgrades. See GetDetailedItemLevelInfo() for getting the actual item level.
@@ -22,7 +21,13 @@ Item
 --- @alias BindType number When the item becomes soul bound, e.g. 1 for Bind on Pickup items [LE_ITEM_BIND]
 --- @alias ExpacID number The related Expansion, e.g. 8 for Shadowlands. On Classic this appears to be always 254 [LE_EXPANSION]
 --- @alias SetID number? ItemSetID - For example 761 for  [Red Winter Hat] (itemID 21524).
-
+--
+--
+--- @class ItemCooldownData
+--- @field startTime TimeInSec
+--- @field duration TimeInSec
+--- @field enable boolean
+--
 --- @class C_Item Modern version of Item Functions
 C_Item = {}
 

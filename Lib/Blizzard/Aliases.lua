@@ -60,8 +60,6 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias OptionalTimeDelayInMilli number|nil The time delay in milliseconds
 --- @alias OriginalIcon Icon The original icon texture for this spell
 --- @alias PredicateFn fun() : boolean | "function() return true end"
---- @alias RGBColor number | "0.0" | "1.0"
---- @alias RGBHex string The 6-char RGBHex color string, i.e. EFEFEF
 --- @alias RegionPointString string | "'TOPLEFT'" | "'TOPRIGHT'" | "'BOTTOMLEFT'" | "'BOTTOMRIGHT'" | "'TOP'" | "'BOTTOM'" | "'LEFT'" | "'RIGHT'" | "'CENTER'"
 --- @alias RegionReference _Region | _ParentedObject | string | "'UIParent'" | "'FrameNameOrObj'"
 --- @alias ScriptType string | "'OnEvent'" | "'OnShow'" | "'OnHide'" | "'OnClick'" | "'OnDoubleClick'" | "'OnDragStart'" | "'OnDragStop'" | "'OnReceiveDrag'" | "'PreClick'" | "'PostClick'" | "'OnLoad'" | "'OnUpdate'" | "'OnFinished'" | "'OnLoop'" | "'OnPause'" | "'OnPlay'" | "'OnStop'" | "'OnAttributeChanged'" | "'OnChar'" | "'OnEnable'" | "'OnDisable'" | "'OnEnter'" | "'OnLeave'" | "'OnKeyUp'" | "'OnKeyDown'" | "'OnMouseDown'" | "'OnMouseUp'" | "'OnMouseWheel'" | "'OnEnterPressed'" | "'OnEscapePressed'" | "'OnTabPressed'" | "'OnSpacePressed'" | "'OnCursorChanged'" | "'OnEditFocusGained'" | "'OnEditFocusLost'" | "'OnTextChanged'" | "'OnTextSet'"  | "'OnTooltipSetItem'" | "'OnValueChanged'"
@@ -213,3 +211,4 @@ FloatingChatFrame
 -------------------------------------------------------------------------------]]
 --- @alias ChatType string | "'SAY'" | "'YELL'" | "'WHISPER'" | "'PARTY'" | "'RAID'" | "'GUILD'" | "'OFFICER'" | "'ACHIEVEMENT'" | "'EMOTE'" | "'CHANNEL'" | "'SYSTEM'" | "'BN_WHISPER'" | "'BN_CONVERSATION'" | "'BN_ALERT'" | "'BN_BROADCAST'" | "'BN_INLINE_TOAST_ALERT'" | "'COMBAT_GUILD_XP_GAIN'" | "'COMBAT_HONOR_GAIN'" | "'COMBAT_FACTION_CHANGE'" | "'LOOT'" | "'MONEY'" | "'COMBAT_MISC_INFO'" | "'COMBAT_XP_GAIN'" | "'PET_INFO'" | "'PET_BATTLE_COMBAT_LOG'" | "'PET_BATTLE_INFO'" | "'INSTANCE_CHAT'" | "'INSTANCE_CHAT_LEADER'" | "'RAID_WARNING'" | "'RAID_BOSS_WHISPER'" | "'RAID_LEADER'" | "'BG_SYSTEM_NEUTRAL'" | "'BG_SYSTEM_ALLIANCE'" | "'BG_SYSTEM_HORDE'" | "'PVP'" | "'ARENA_POINTS'"
 
+--- @alias NoOpFn fun() : void

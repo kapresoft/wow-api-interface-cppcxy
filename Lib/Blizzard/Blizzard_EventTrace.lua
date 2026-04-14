@@ -1,1 +1,0 @@
---- @alias EventTraceInstance EventTrace|ButtonFrameTemplate|EventTracePanelMixin
