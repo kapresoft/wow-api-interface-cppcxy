@@ -37,7 +37,7 @@
       "RaidNotice_AddMessage",
       "RaidWarningFrame",
       "RegisterStateDriver",
-      "ReloadUI",
+      "ReloadUI",  
       "SELECTED_CHAT_FRAME",
       "Settings",
       "SettingsPanel",
@@ -51,7 +51,7 @@
       "UIWidgetTopCenterContainerFrame",
       "YES"
     ]
-  },
+  }, 
   "workspace": {
     "library": [
       "/Users/tony/sandbox/github/kapresoft/wow/tools/vscode-wow-api-cppcxy/Annotations"

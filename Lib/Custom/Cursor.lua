@@ -1,6 +1,8 @@
 ---@alias CursorType string | "'spell'" | "'item'" | "'macro'" | "'mount'" | "'companion'" | "'battlepet'" | "'petaction'" | "'flyout'" | "'equipmentset'" | "'toy'" | "'money'" | "'currency'" | "'merchant'" | "'worldmap'" | "'talent'" | "'profession'" | "'glyph'" | "'battlepetability'" | "'keystone'" | "'azeritepower'" | "'transmogappearance'" | "'transmogillusion'" | "'voidstorage'" | "'petspell'" | "'conduit'" | "'runeforgepower'" | "'traitconfig'" | "'traitentry'" | "'professionrecipe'" | "'craftingorder'" | "'craftingenchant'" | "'craftingreagent'" | "'craftingquality'" | "'socket'" | "'quest'" | "'garrisonbuilding'" | "'garrisonspecialization'" | "'heirloom'" | "'pet'" | "'achievement'" | "'scenario'" | "'calendar'" | "'mail'" | "'auction'"
 ---@alias CursorAdditionalInfo string|number|boolean|nil
 
+--- Spell:  SpellID=info3
+--- Item:  ItemID=info1, ItemLink=info2
 ---@class CursorInfo
 ---@field type CursorType
 ---@field info1 CursorAdditionalInfo
@@ -16,7 +18,7 @@ Cursor
 local CursorInfo_Spell = {
     --- @type SpellName
     type = 'spell',
-    --- @type SpellID
+    --- @type SpellIdentifier
     spellID = -1,
     --- @type Index
     spellIndex = -1,

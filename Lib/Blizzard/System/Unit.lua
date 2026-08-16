@@ -3,7 +3,7 @@ Unit Aliases
 -------------------------------------------------------------------------------]]
 --- @alias CompanionType string | "'MOUNT'" | "'CRITTER'"
 --- @alias CharacterFrameName string | "'PaperDollFrame'" | "'SkillFrame'" | "'PVPFrame'" | "'ReputationFrame'" | "'TokenFrame'"
---- @alias UnitID string | "'player'" | "'target'" | "'focus'" | "'mouseover'" | "'none'" | "'pet'" | "'vehicle'"
+--- @alias UnitID UnitToken
 --- @alias UnitAuraFilter string | "'HELPFUL'" | "'HARMFUL'"
 --- @alias UnitClassLocalizedName string | "'warrior'" | "'paladin'"
 --- UnitClass is the locale-independent name
@@ -101,7 +101,7 @@ function GetNormalizedRealmName() end
 --- /dump UnitCastingInfo('player')
 --- ```
 --- @param unit UnitID  | "'player'" | "'target'" | "'focus'" | "'mouseover'" | "'none'" | "'pet'" | "'vehicle'" | "'-> The unit ID to query'"
---- @return SpellName|nil, DisplayText|nil, TextureIDOrPath|nil, StartTime|nil, EndTime|nil, IsTradeSkill|nil, CastID|string, IsUninterruptible|nil, SpellID name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, uninterruptible The name of the spell (or nil if no spell is being cast), display name, texture path, start time in milliseconds, end time in milliseconds, whether the cast is a tradeskill, the unique spell cast ID, whether the spell can be interrupted, and the spell's ID.
+--- @return SpellName|nil, DisplayText|nil, TextureIDOrPath|nil, StartTime|nil, EndTime|nil, IsTradeSkill|nil, CastID|string, IsUninterruptible|nil, SpellIdentifier name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, uninterruptible The name of the spell (or nil if no spell is being cast), display name, texture path, start time in milliseconds, end time in milliseconds, whether the cast is a tradeskill, the unique spell cast ID, whether the spell can be interrupted, and the spell's ID.
 function UnitCastingInfo(unit) end
 
 --- Checks if the specified unit is in a vehicle.

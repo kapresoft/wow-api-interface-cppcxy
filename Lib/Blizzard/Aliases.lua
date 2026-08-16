@@ -7,41 +7,42 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --
 --
 --
---- @alias ActionTypeName EnumString | "'spell'" | "'item'" | "'macro'" | "'macrotext'" | "'petaction'" | "'money'" | "'mount'" | "'companion'" | "'merchant'" | "'battlepet'" | "'equipmentset'"
---- @alias AddOnIsNotLoadableReason EnumString | "'The reason why the AddOn cannot be loaded.'" | "'BANNED'" | "'CORRUPT'" | "'DEMAND_LOADED'" | "'DISABLED'" | "'INCOMPATIBLE'" | "'INTERFACE_VERSION'" | "'MISSING'"
---- @alias AddOnName string | "'The name of the AddOn (the folder name)'"
---- @alias AddOnSecurity EnumString | "'Indicates the security status of the AddOn.'" | "'SECURE_PROTECTED'"| "'INSECURE'"| "'SECURE'"
---- @alias AddOnTitle string | "'The title of the AddOn as listed in the .toc file'"
+--- @alias ActionType string | "spell" | "item" | "macro" | "macrotext" | "petaction" | "money" | "mount" | "companion" | "merchant" | "battlepet" | "equipmentset"
+--- @alias ActionTypeName ActionType | "@deprecated" | "spell" | "item" | "macro" | "macrotext" | "petaction" | "money" | "mount" | "companion" | "merchant" | "battlepet" | "equipmentset"
+--- @alias AddOnIsNotLoadableReason string | "The reason why the AddOn cannot be loaded." | "BANNED" | "CORRUPT" | "DEMAND_LOADED" | "DISABLED" | "INCOMPATIBLE" | "INTERFACE_VERSION" | "MISSING"
+--- @alias AddOnName string | "The name of the AddOn (the folder name)"
+--- @alias AddOnSecurity EnumString | "Indicates the security status of the AddOn." | "SECURE_PROTECTED"| "INSECURE"| "SECURE"
+--- @alias AddOnTitle string | "The title of the AddOn as listed in the .toc file"
 --- @alias Alpha number | "0.0" | "1.0"
---- @alias AnchorPoint RegionPointString | "'TOPLEFT'" | "'TOPRIGHT'" | "'BOTTOMLEFT'" | "'BOTTOMRIGHT'" | "'TOP'" | "'BOTTOM'" | "'LEFT'" | "'RIGHT'" | "'CENTER'"
+--- @alias AnchorPoint RegionPointString | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
 --- @alias AnimId number
---- @alias BookType EnumString | "BOOKTYPE_SPELL" | "BOOKTYPE_PET" | "BOOKTYPE_PROFESSION" | "'spell'" | "'pet'"
+--- @alias BookType EnumString | "BOOKTYPE_SPELL" | "BOOKTYPE_PET" | "BOOKTYPE_PROFESSION" | "spell" | "pet"
 --- @alias BookTypeOptional BookType
---- @alias CooldownType string | "'spell'" | "'item'" | "'macro'"
+--- @alias CooldownType string | "spell" | "item" | "macro"
 --- @alias Count Number
 --- @alias CreatureDisplayInfoID number|nil
 --- @alias DataProviderFilterFn fun(elem:DataProviderElement) : Boolean | "function(elem) return true end"
 --- @alias DataProviderHandlerFn fun(elem:DataProviderElement) | "function(elem) print('elem:', pformat(elem)) end"
 --- @alias Description string
 --- @alias DisplayText string
---- @alias DrawLayer EnumString | "'BACKGROUND'" | "'BORDER'" | "'ARTWORK'" | "'OVERLAY'"  | "'HIGHLIGHT'"
+--- @alias DrawLayer EnumString | "BACKGROUND" | "BORDER" | "ARTWORK" | "OVERLAY"  | "HIGHLIGHT"
 --- @alias Duration number | "1.0"
 --- @alias Enable number | "0" | "1"
---- @alias EndTime number | "1.0" | "'In Milliseconds'"
+--- @alias EndTime number | "1.0" | "In Milliseconds"
 --- @alias EnumString string An enumerated string value
 --- @alias EventName string Blizzard Event Name
 --- @alias Faction number|nil
---- @alias FontName string | "'GameFontNormal'" | "'GameFontNormalMed1'" | "'GameFontNormalOutline'" | "'QuestFontNormalHuge'" | "'GameFontHighlight'" | "'GameTooltipTextSmall'" | "'NumberFontNormalSmall'"
---- @alias FrameEvent string | "'PLAYER_LOG_IN'" | "'PLAYER_LOG_OUT'" | "'PLAYER_STARTED_MOVING'" | "'PLAYER_STOPPED_MOVING'" | "'etc...'"
---- @alias FramePoint RegionPointString | "'TOPLEFT'" | "'TOPRIGHT'" | "'BOTTOMLEFT'" | "'BOTTOMRIGHT'" | "'TOP'" | "'BOTTOM'" | "'LEFT'" | "'RIGHT'" | "'CENTER'"
---- @alias FrameType string | "'Frame'" | "'Button'" | "'CheckButton'" | "'Cooldown'" | "'Editbox'" | "'GameTooltip'" | "'ScrollFrame'" | "'Slider'" | "'MessageFrame'"
+--- @alias FontName string | "GameFontNormal" | "GameFontNormalMed1" | "GameFontNormalOutline" | "QuestFontNormalHuge" | "GameFontHighlight" | "GameTooltipTextSmall" | "NumberFontNormalSmall"
+--- @alias FrameEvent string | "PLAYER_LOG_IN" | "PLAYER_LOG_OUT" | "PLAYER_CONTROL_LOST" | "PLAYER_CONTROL_GAINED" | "PLAYER_STARTED_MOVING" | "PLAYER_STOPPED_MOVING" | "etc..."
+--- @alias FramePoint RegionPointString | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
+--- @alias FrameType string | "Frame" | "Button" | "CheckButton" | "Cooldown" | "Editbox" | "GameTooltip" | "ScrollFrame" | "Slider" | "MessageFrame"
 --- @alias HandlerFn fun(arg:any) | "function(arg) end"
 --- @alias HandlerFnNoArg fun() | "function() end"
---- @alias HexColor string | "'FFEEA0A0'" | "'AARRGGBB'"
---- @alias HexColor6Digit string | "'EEA0A0'" | "'RRGGBB'"
---- @alias HexARGB string | "'fcEEA0A0'" | "'fcRRGGBB'"
---- @alias HexRGBA string | "'EEA0A0fc'" | "'RRGGBBfc'"
---- @alias HexRGB string | "'EEA0A0'" | "'RRGGBB'"
+--- @alias HexColor string | "FFEEA0A0" | "AARRGGBB"
+--- @alias HexColor6Digit string | "EEA0A0" | "RRGGBB"
+--- @alias HexARGB string | "fcEEA0A0" | "fcRRGGBB"
+--- @alias HexRGBA string | "EEA0A0fc" | "RRGGBBfc"
+--- @alias HexRGB string | "EEA0A0" | "RRGGBB"
 --- @alias Icon number The spell icon texture
 --- @alias IconIDOrPath Icon|IconPath
 --- @alias IconPath string The path to icon texture
@@ -58,26 +59,26 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias Notes string
 --- @alias Number number | "0"
 --- @alias NumberOfMounts Number
---- @alias ObjectType string | "'Frame'" | "'Button'" | "'FontString'"
+--- @alias ObjectType string | "Frame" | "Button" | "FontString"
 --- @alias OptionalTable table
 --- @alias OptionalTimeDelayInMilli number|nil The time delay in milliseconds
 --- @alias OriginalIcon Icon The original icon texture for this spell
 --- @alias PredicateFn fun() : boolean | "function() return true end"
---- @alias RegionPointString string | "'TOPLEFT'" | "'TOPRIGHT'" | "'BOTTOMLEFT'" | "'BOTTOMRIGHT'" | "'TOP'" | "'BOTTOM'" | "'LEFT'" | "'RIGHT'" | "'CENTER'"
---- @alias RegionReference _Region | _ParentedObject | string | "'UIParent'" | "'FrameNameOrObj'"
---- @alias ScriptType string | "'OnEvent'" | "'OnShow'" | "'OnHide'" | "'OnClick'" | "'OnDoubleClick'" | "'OnDragStart'" | "'OnDragStop'" | "'OnReceiveDrag'" | "'PreClick'" | "'PostClick'" | "'OnLoad'" | "'OnUpdate'" | "'OnFinished'" | "'OnLoop'" | "'OnPause'" | "'OnPlay'" | "'OnStop'" | "'OnAttributeChanged'" | "'OnChar'" | "'OnEnable'" | "'OnDisable'" | "'OnEnter'" | "'OnLeave'" | "'OnKeyUp'" | "'OnKeyDown'" | "'OnMouseDown'" | "'OnMouseUp'" | "'OnMouseWheel'" | "'OnEnterPressed'" | "'OnEscapePressed'" | "'OnTabPressed'" | "'OnSpacePressed'" | "'OnCursorChanged'" | "'OnEditFocusGained'" | "'OnEditFocusLost'" | "'OnTextChanged'" | "'OnTextSet'"  | "'OnTooltipSetItem'" | "'OnValueChanged'"
---- @alias ScriptTypeEventHandler fun(self:any, event:string) | "function(self, event) print('Event received:', event) end"
---- @alias SoundChannel string | "'SFX'" | "'Effects'" | "'Music'" | "'Ambience'" | "'Dialog'" | "'Master'"
+--- @alias RegionPointString string | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
+--- @alias RegionReference Region | "string" | "UIParent" | "FrameNameOrObj"
+--- @alias ScriptType string | "OnEvent" | "OnShow" | "OnHide" | "OnClick" | "OnDoubleClick" | "OnDragStart" | "OnDragStop" | "OnReceiveDrag" | "PreClick" | "PostClick" | "OnLoad" | "OnUpdate" | "OnFinished" | "OnLoop" | "OnPause" | "OnPlay" | "OnStop" | "OnAttributeChanged" | "OnChar" | "OnEnable" | "OnDisable" | "OnEnter" | "OnLeave" | "OnKeyUp" | "OnKeyDown" | "OnMouseDown" | "OnMouseUp" | "OnMouseWheel" | "OnEnterPressed" | "OnEscapePressed" | "OnTabPressed" | "OnSpacePressed" | "OnCursorChanged" | "OnEditFocusGained" | "OnEditFocusLost" | "OnTextChanged" | "OnTextSet"  | "OnTooltipSetItem" | "OnValueChanged"
+--- @alias ScriptTypeEventHandler fun(self:any, event:string) | "function(self, event) print(Event received:, event) end"
+--- @alias SoundChannel string | "SFX" | "Effects" | "Music" | "Ambience" | "Dialog" | "Master"
 --- @alias Source string
 --- @alias SourceType number
 --- @alias SpecializationIndex number | "1" | "2" | "3"
 --- @alias SpecializationIndexOptional SpecializationIndex | "nil" | "1" | "2" | "3"
 --- @alias SpellVisualKitID number
---- @alias StartTime number | "1.0" | "'In Milliseconds'"
+--- @alias StartTime number | "1.0" | "In Milliseconds"
 --- @alias SubDrawLayer number | "-8"| "-7"| "-6"| "-5" | "-4"| "-3"| "-2"| "-1" | "0"| "1"| "2"| "3" | "4"| "5"| "6" | "7"
 --- @alias SubType string
 --- @alias TextureIDOrPath TextureIcon|TexturePath @deprecated Use TextureIcon
---- @alias TextureIcon Icon|IconPath|"'interface\buttons\buttonhilight-square'" | "12345"
+--- @alias TextureIcon Icon|IconPath|"interface\buttons\buttonhilight-square" | "12345"
 --- @alias TexturePath IconPath
 --- @alias TimeDelayInMilli number The time delay in milliseconds
 --- @alias TimeDelayInSec number The time delay in second(s)
@@ -90,9 +91,9 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --[[-----------------------------------------------------------------------------
 Booleans
 -------------------------------------------------------------------------------]]
---- @alias Boolean boolean | "true" | "false"
---- @alias BooleanOptional Boolean|nil | "nil" | "true" | "false"
---- @alias BooleanInt number | "0" | "1" | "nil"
+--- @alias Boolean boolean
+--- @alias BooleanOptional Boolean? @ true, false or nil
+--- @alias BooleanInt number? @ 0, 1, or nil
 --- @alias CannotBeCastedDueToLowMana boolean
 --- @alias CanSetFavorite boolean
 --- @alias Castable Boolean
@@ -119,7 +120,6 @@ Booleans
 --- @alias IsTradeSkill boolean
 --- @alias IsUninterruptible boolean
 --- @alias IsUsable boolean
---- @alias IsUsable Boolean
 --- @alias IsUsingDefaultFilters boolean
 --- @alias IsValid boolean
 --- @alias IsVisible boolean
@@ -133,25 +133,27 @@ Booleans
 --[[-----------------------------------------------------------------------------
 Frame
 -------------------------------------------------------------------------------]]
---- @alias FrameStrata string | "'WORLD'" | "'BACKGROUND'" | "'LOW'" | "'MEDIUM'" | "'HIGH'" | "'DIALOG'" | "'FULLSCREEN'" | "'FULLSCREEN_DIALOG'" | "'TOOLTIP'"
+--- @alias FrameStrata string | "WORLD" | "BACKGROUND" | "LOW" | "MEDIUM" | "HIGH" | "DIALOG" | "FULLSCREEN" | "FULLSCREEN_DIALOG" | "TOOLTIP"
 --- @alias FrameLevel number | "1" | "10" | "100" | "200"
+
+--[[-----------------------------------------------------------------------------
+Action
+-------------------------------------------------------------------------------]]
+--- @alias ActionValue number|string @Can be the number or string identifier for actions(spell, item, etc..)
 
 --[[-----------------------------------------------------------------------------
 Spell
 -------------------------------------------------------------------------------]]
---- @alias SpellID_Name_Or_Index number|string
---- @alias SpellNameOrID number|string
---- @alias SpellID number
---- @alias SpellId number
---- @alias SpellName string
+--- @alias PetGUID string | 'BattlePet-0-000008C13591'
+--- @alias PetID PetGUID | 'BattlePet-0-000008C13591'
+--- @alias SpellID number | 585
+--- @alias SpellName string | "Smite"
 --- @alias SpellSubName string
---- @alias SpellIdentifier SpellID|SpellName | "'Smite'" | "585"
 --- @alias EffectiveSpellIdentifier SpellIdentifier The effective SpellIdentifier resolved from spells, items or macros
 --- @alias SpellRank string
---- @alias SpellLink string | "'Rank 1'" | "'Rank 2'"
+--- @alias SpellLink string | "Rank 1" | "Rank 2"
 --- @alias SpellSubtext string
---- @alias SpellLink string
---- @alias RuneSpellName string | "'Hands Rune Ability'"| "'legs'"
+--- @alias RuneSpellName string | "Hands Rune Ability"| "legs"
 --- @alias Time number
 --- @alias Range number
 --- @alias CastID string
@@ -176,13 +178,13 @@ Macro
 Script Handlers
 • https://warcraft.wiki.gg/wiki/UIHANDLER_OnClick
 -------------------------------------------------------------------------------]]
---- @alias ButtonName string | "'LeftButton'" | "'RightButton'" | "'MiddleButton'" | "'Button4'" | "'Button5'" | "'ButtonN'"
+--- @alias ButtonName string | "LeftButton" | "RightButton" | "MiddleButton" | "Button4" | "Button5" | "ButtonN"
 --- @alias ButtonDown Boolean True when the button is pressed, false when it is released
 
 --[[-----------------------------------------------------------------------------
 CursorInfo
 -------------------------------------------------------------------------------]]
---- @alias CursorSubType string | "'M6'"
+--- @alias CursorSubType string | "M6"
 --- @alias Info1 string
 --- @alias Info2 string
 --- @alias Info3 string
@@ -198,20 +200,20 @@ Difficulty ID: @see https://warcraft.wiki.gg/wiki/DifficultyID
 5 10 Player (Heroic)
 6 25 Player (Heroic)
 -------------------------------------------------------------------------------]]
---- @alias GroupType string |'party'|'raid'
---- @alias InstanceType string | "'party'" | "'raid'" | "'arena'" | "'pvp'" | "'none'"
---- @alias InstanceDifficulty { id:number, name:string } | "{ id=2, name='Heroic' }"
---- @alias InstanceDifficultyName string | "'Normal'" | "'Heroic'" | "'10 Player'" | "'25 Player (Heroic)'"
---- @alias InstanceDifficultyID number | "1" | "'2'" | "3" | "4" | "5" | "6"
+--- @alias GroupType string |"party"|"raid"
+--- @alias InstanceType string | "party" | "raid" | "arena" | "pvp" | "none"
+--- @alias InstanceDifficulty { id:number, name:string } | "{ id=2, name=Heroic }"
+--- @alias InstanceDifficultyName string | "Normal" | "Heroic" | "10 Player" | "25 Player (Heroic)"
+--- @alias InstanceDifficultyID number | "1" | "2" | "3" | "4" | "5" | "6"
 --- @alias LFGActivityID number
 --- @alias LFGActivities table<number, LFGActivityID>
 --- @alias QuestID number
 --- @alias QuestLogIndex number
---- @alias QuestObjectiveType string | "'item'" | "'monster'"
+--- @alias QuestObjectiveType string | "item" | "monster"
 
 --[[-----------------------------------------------------------------------------
 FloatingChatFrame
 -------------------------------------------------------------------------------]]
---- @alias ChatType string | "'SAY'" | "'YELL'" | "'WHISPER'" | "'PARTY'" | "'RAID'" | "'GUILD'" | "'OFFICER'" | "'ACHIEVEMENT'" | "'EMOTE'" | "'CHANNEL'" | "'SYSTEM'" | "'BN_WHISPER'" | "'BN_CONVERSATION'" | "'BN_ALERT'" | "'BN_BROADCAST'" | "'BN_INLINE_TOAST_ALERT'" | "'COMBAT_GUILD_XP_GAIN'" | "'COMBAT_HONOR_GAIN'" | "'COMBAT_FACTION_CHANGE'" | "'LOOT'" | "'MONEY'" | "'COMBAT_MISC_INFO'" | "'COMBAT_XP_GAIN'" | "'PET_INFO'" | "'PET_BATTLE_COMBAT_LOG'" | "'PET_BATTLE_INFO'" | "'INSTANCE_CHAT'" | "'INSTANCE_CHAT_LEADER'" | "'RAID_WARNING'" | "'RAID_BOSS_WHISPER'" | "'RAID_LEADER'" | "'BG_SYSTEM_NEUTRAL'" | "'BG_SYSTEM_ALLIANCE'" | "'BG_SYSTEM_HORDE'" | "'PVP'" | "'ARENA_POINTS'"
+--- @alias ChatType string | "SAY" | "YELL" | "WHISPER" | "PARTY" | "RAID" | "GUILD" | "OFFICER" | "ACHIEVEMENT" | "EMOTE" | "CHANNEL" | "SYSTEM" | "BN_WHISPER" | "BN_CONVERSATION" | "BN_ALERT" | "BN_BROADCAST" | "BN_INLINE_TOAST_ALERT" | "COMBAT_GUILD_XP_GAIN" | "COMBAT_HONOR_GAIN" | "COMBAT_FACTION_CHANGE" | "LOOT" | "MONEY" | "COMBAT_MISC_INFO" | "COMBAT_XP_GAIN" | "PET_INFO" | "PET_BATTLE_COMBAT_LOG" | "PET_BATTLE_INFO" | "INSTANCE_CHAT" | "INSTANCE_CHAT_LEADER" | "RAID_WARNING" | "RAID_BOSS_WHISPER" | "RAID_LEADER" | "BG_SYSTEM_NEUTRAL" | "BG_SYSTEM_ALLIANCE" | "BG_SYSTEM_HORDE" | "PVP" | "ARENA_POINTS"
 
 --- @alias NoOpFn fun() : void

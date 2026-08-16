@@ -1,1 +1,1 @@
---- @alias PaperDollFrame FrameObj
+--- @alias PaperDollFrame Frame
